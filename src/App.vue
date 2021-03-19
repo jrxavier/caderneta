@@ -1,24 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" />
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <div>
-      <div>
-        <b-button-group>
-          <b-button>Button 1</b-button>
-          <b-button>Button 2</b-button>
-          <b-button>Button 3</b-button>
-        </b-button-group>
-      </div>
-      <div class="mt-3">
-        <b-button-group>
-          <b-button variant="success">Success</b-button>
-          <b-button variant="info">Info</b-button>
-          <b-button variant="warning">Warning</b-button>
-        </b-button-group>
-      </div>
-    </div>
+    <h1 class="h1">{{ msg }}</h1>
+    <h2>Lista de vacinas</h2>
+    <br /><br />
+    <p class="lead">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit maxime
+      autem, aut commodi at vel ratione. Animi doloribus amet odit possimus esse
+      minima, accusamus quia dolorum laboriosam repellendus recusandae
+      voluptatum qui quae optio autem provident perspiciatis. Dicta dolore
+      voluptate sint?
+    </p>
+
+    <!-- BLOCKQUOTE WITH FOOTER -->
+    <blockquote class="blockquote text-right">
+      <p class="font-italic">"Vacina é tudo de bom!"</p>
+      <footer class="blockquote-footer">
+        Dona Almira
+      </footer>
+    </blockquote>
+
+    <div></div>
   </div>
 </template>
 
@@ -27,9 +28,9 @@ export default {
   name: "app",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App",
+      msg: "Minha caderneta de vacinação"
     };
-  },
+  }
 };
 </script>
 

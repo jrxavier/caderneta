@@ -4,11 +4,12 @@
     <h2>Lista de vacinas</h2>
     <br /><br />
     <p class="lead">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit maxime
-      autem, aut commodi at vel ratione. Animi doloribus amet odit possimus esse
-      minima, accusamus quia dolorum laboriosam repellendus recusandae
-      voluptatum qui quae optio autem provident perspiciatis. Dicta dolore
-      voluptate sint?
+      {{ mensagemPrincipal }}
+    </p>
+
+    <!-- RESPONSIVE ALIGN -->
+    <p class="text-sm-right">
+      {{ mensagemPrincipal }}
     </p>
 
     <!-- BLOCKQUOTE WITH FOOTER -->
@@ -19,7 +20,19 @@
       </footer>
     </blockquote>
 
-    <div></div>
+    <br /><br />
+
+    <!-- TURN BLOCK TO INLINE -->
+    <h1 class="d-inline bg-success">Transformacao de Block em Inline</h1>
+
+    <br />
+    <br />
+
+    <!-- TURN INLINE TO BLOCK -->
+    <p>
+      Teste de transformacao de<span class="d-block bg-primary">Inline</span> em
+      bloco
+    </p>
   </div>
 </template>
 
@@ -28,7 +41,13 @@ export default {
   name: "app",
   data() {
     return {
-      msg: "Minha caderneta de vacinação"
+      msg: "Minha caderneta de vacinação",
+      mensagemPrincipal:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit maxime utem " +
+        "aut commodi at vel ratione. Animi doloribus amet odit possimus esse " +
+        "minima, accusamus quia dolorum laboriosam repellendus recusandae " +
+        "voluptatum qui quae optio autem provident perspiciatis. Dicta dolore " +
+        "voluptate sint?"
     };
   }
 };
